@@ -91,35 +91,19 @@ const colorScale = scaleQuantize()
 const WorldMap = () => {
   return (
     <div>
-      <ComposableMap>
-        <Geographies geography="/features.json"> 
-          {({ geographies }) =>
-            geographies.map(geo => {
-              const d = data.find(item => item.isoCode ===  geo.id); // Find data for the current country        
-              return (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  style={{
-                    default: {
-                      fill: d ? colorScale(d.value) : "#EEE", // Color based on data value or default if not found
-                      outline: "none"
-                    },
-                    hover: {
-                      fill: d ? colorScale(d.value) : "#EEE", // Same for hover
-                      outline: "none"
-                    },
-                    pressed: {
-                      fill: d ? colorScale(d.value) : "#EEE", // And pressed
-                      outline: "none"
-                    },
-                  }}
-                />
-              );
-            })
-          }
-        </Geographies>
-      </ComposableMap>
+   
+      <div>
+        <ComposableMap>
+          <Geographies geography="/features.json">
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography key={geo.rsmKey} geography={geo} />
+              ))
+            }
+          </Geographies>
+        </ComposableMap>
+      </div>
+
     </div>
   );
 };
