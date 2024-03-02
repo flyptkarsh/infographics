@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/infographics/static/css/main.f855e6bc.css",
+    "main.js": "/infographics/static/js/main.619cce4e.js",
+    "static/js/453.799c7337.chunk.js": "/infographics/static/js/453.799c7337.chunk.js",
+    "static/media/logo.svg": "/infographics/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/infographics/index.html",
+    "main.f855e6bc.css.map": "/infographics/static/css/main.f855e6bc.css.map",
+    "main.619cce4e.js.map": "/infographics/static/js/main.619cce4e.js.map",
+    "453.799c7337.chunk.js.map": "/infographics/static/js/453.799c7337.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.619cce4e.js"
+  ]
+}
